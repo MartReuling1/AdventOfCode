@@ -35,6 +35,7 @@ function calculateFuel(crabs, pos){
     let fuelUsed = 0;
     for(let i = 0;i < crabs.length; i++){
         let absoluteValue = Math.abs(pos - crabs[i]);
+        // part 1: fuelUsed += absoluteValue;
         fuelUsed += (absoluteValue*(absoluteValue+1))/2;        
     };
     fuelLibrary.push(fuelUsed);        
